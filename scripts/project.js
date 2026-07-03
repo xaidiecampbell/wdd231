@@ -161,34 +161,3 @@ document.addEventListener("DOMContentLoaded", () => {
         });
         console.log(homeLink);
 });
-// const oldLink = document.querySelector("#old");
-
-// oldLink.addEventListener("click", () =>
-//     createTempleCard(temples.filter(temple => {
-//         const year = parseInt(temple.dedicated);
-//         return year < 2010;
-//     })));
-
-// const newLink = document.querySelector("#new");
-
-// newLink.addEventListener("click", () =>
-//     createTempleCard(temples.filter(temple => {
-//         const year = parseInt(temple.dedicated);
-//         return year > 2010;
-//     })));
-
-// const smallLink = document.querySelector("#small");
-
-// smallLink.addEventListener("click", () =>
-//     createTempleCard(temples.filter(temple => {
-//         const area = parseInt(temple.area);
-//         return area < 10000;
-//     })));
-
-// const largeLink = document.querySelector("#large");
-
-// largeLink.addEventListener("click", () =>
-//     createTempleCard(temples.filter(temple => {
-//         const area = parseInt(temple.area);
-//         return area > 10000;
-//     })));
