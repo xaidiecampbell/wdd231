@@ -101,7 +101,7 @@ h1 {
 
 body {
     display: grid;
-    grid-template: 1fr;
+    grid-template: 3, 1fr;
     min-height: 100vh;
     padding: 1rem;
     gap: 1rem;
