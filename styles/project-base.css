@@ -6,14 +6,14 @@
     --accent2-color: #9ccfc7;
     --accent3-color: #253b45;
     --accent4-color: #cf7041;
-    --font-family: Verdana, Geneva, Tahoma, sans-serif;
+    --font-family: 'Roboto', sans-serif;
     --box-sizing: border-box;
 }
 
 
 
 * {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Roboto', sans-serif;;
     box-sizing: border-box;
 }
 
