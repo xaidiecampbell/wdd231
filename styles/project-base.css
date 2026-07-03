@@ -177,6 +177,7 @@ footer {
     display: flex;
     justify-content: center;
     column-gap: 10px;
+    padding: 1rem;
 }
 
 .social a {
