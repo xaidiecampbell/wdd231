@@ -59,7 +59,7 @@ header span {
     content: "\00D7";
 }
 
-.navigation  {
+.navigation {
     display: none;
 
 }
@@ -68,7 +68,7 @@ header span {
     display: block;
 }
 
-.navigation ul  {
+.navigation ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -101,7 +101,7 @@ h1 {
 
 body {
     display: grid;
-    grid-template:  1fr 1fr;
+    grid-template: 1fr 1fr;
     min-height: 100vh;
     padding: 1rem;
     gap: 1rem;
@@ -162,6 +162,12 @@ body {
     background-color: #cf7041;
     border-radius: 10px;
     color: #9ccfc7;
+}
+
+.courses h2 {
+    color: #cbbb80;
+    grid-column: 1/4;
+    text-align: center;
 }
 
 /* footer */
