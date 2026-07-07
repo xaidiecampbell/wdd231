@@ -1,0 +1,28 @@
+{
+    "family": {
+        "familyName": "Campbell",
+        "dateMovedIn": "2008",
+        "numberOfRecords": 4,
+        "visitedByBishop": true,
+        "individuals": [{
+            "name": "Robert",
+            "gender": "male",
+            "DOB": "May 26, 1972"
+            },
+            {
+            "name": "Xaidie",
+            "gender": "female",
+            "DOB": "Nov 16, 1971"
+            },
+            {
+            "name": "Muriel",
+            "gender": "female",
+            "DOB": "Dec 9, 2004"
+            },
+            {
+            "name": "Maxwell",
+            "gender": "male",
+            "DOB": "March 30, 2006"
+            }
+        ]
+}

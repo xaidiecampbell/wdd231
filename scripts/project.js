@@ -100,8 +100,6 @@ const course = [
     }
 ]
 
-createCourseCard(course)
-
 
 
 function createCourseCard() {
@@ -141,23 +139,24 @@ document.addEventListener("DOMContentLoaded", () => {
     // all event listeners here
 
     const wddLink = document.querySelector("#WDD");
-        wddLink.addEventListener("click", () => {
-            createCourseCard(courses.filter(course => course.subject==="WDD"));
-        })
+    wddLink.addEventListener("click", () => {
+        createCourseCard(courses.filter(course => course.subject.includes("WDD")));
+    })
+    
     console.log(wddLink);
     const passedClassesLink = document.querySelector("#true");
-        passedClassesLink.addEventListener("click", () => {
-            createCourseCard(courses.filter(course => course.completed === true))
-        })
+    passedClassesLink.addEventListener("click", () => {
+        createCourseCard(courses.filter(course => course.completed === true))
+    })
     console.log(cseLink);
     const cseLink = document.querySelector("#CSE");
-        cseLink.addEventListener("click", () => {
-            createCourseCard(courses.filter(course => course.subject==="CSE"));
-        })
+    cseLink.addEventListener("click", () => {
+        createCourseCard(courses.filter(course => course.subject.includes("CSE")));
+    })
     console.log(passedClassesLink);
     const homeLink = document.querySelector("#home");
-        homeLink.addEventListener("click", () => {
-            createCourseCard(courses);
-        });
-        console.log(homeLink);
+    homeLink.addEventListener("click", () => {
+        createCourseCard(courses);
+    });
+    console.log(homeLink);
 });
