@@ -8,7 +8,19 @@ navButton.addEventListener('click', () => {
     navBar.classList.toggle('show');
     // navLinks.classList.toggle('show');
 });
+// wayfinding
+// Get the current page filename
+const currentPage = window.location.pathname.split("/").pop();
 
+// Get all navigation links
+const navLinks = document.querySelectorAll("nav a");
+
+// Loop through each link
+navLinks.forEach(link => {
+    if (link.getAttribute("href") === currentPage) {
+        link.classList.add("active");
+    }
+});
 // Select the nav element
 const navBar = document.querySelector('#nav-bar');
 
@@ -102,9 +114,11 @@ const course = [
 
 
 
-function createCourseCard() {
+function createCourseCard(courses = course) {
+    // clear courses
+    document.querySelector(".courseList").textContent = ""
 
-    course.forEach(course => {
+    courses.forEach(course => {
         let courseCard = document.createElement("section");
         let subject = document.createElement("h3");
         let number = document.createElement("p");
@@ -129,7 +143,7 @@ function createCourseCard() {
         courseCard.appendChild(description);
         courseCard.appendChild(technology);
 
-        document.querySelector(".courses").appendChild(courseCard);
+        document.querySelector(".courseList").appendChild(courseCard);
 
 
     });
@@ -140,23 +154,26 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const wddLink = document.querySelector("#WDD");
     wddLink.addEventListener("click", () => {
-        createCourseCard(courses.filter(course => course.subject.includes("WDD")));
+        createCourseCard(course.filter(course => course.subject.includes("WDD")));
     })
-    
+
     console.log(wddLink);
+
     const passedClassesLink = document.querySelector("#true");
     passedClassesLink.addEventListener("click", () => {
-        createCourseCard(courses.filter(course => course.completed === true))
-    })
-    console.log(cseLink);
-    const cseLink = document.querySelector("#CSE");
-    cseLink.addEventListener("click", () => {
-        createCourseCard(courses.filter(course => course.subject.includes("CSE")));
+        createCourseCard(course.filter(course => course.completed === true))
     })
     console.log(passedClassesLink);
+    const cseLink = document.querySelector("#CSE");
+    cseLink.addEventListener("click", () => {
+        createCourseCard(course.filter(course => course.subject.includes("CSE")));
+    })
+    console.log(cseLink);
+
+    
     const homeLink = document.querySelector("#home");
     homeLink.addEventListener("click", () => {
-        createCourseCard(courses);
+        createCourseCard(course);
     });
     console.log(homeLink);
 });

@@ -9,6 +9,7 @@
     --font-family: 'Roboto', sans-serif;
     --box-sizing: border-box;
 }
+
 /* .raleway-<uniquifier> {
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
@@ -26,7 +27,8 @@
 
 
 * {
-    font-family: 'Roboto', sans-serif;;
+    font-family: 'Roboto', sans-serif;
+    ;
     box-sizing: border-box;
 }
 
@@ -76,7 +78,17 @@ header span {
     display: none;
 
 }
+nav a.active {
+    background-color: #253b45;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
 
+nav a {
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+}
 .navigation.show {
     display: block;
 }
@@ -134,7 +146,7 @@ body {
     border-radius: 10px;
 }
 
-.courses {
+.courses {display: grid; grid-template-columns: 1fr 1fr 1fr;
 
     background-color: #253b45;
     padding: 10px;
@@ -152,9 +164,12 @@ body {
 
 
 .course-filter ul {
+    display: flex;
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin: 10;
+    padding: 10;
+    text-align:justify;
+    gap:10px;
 }
 
 .course-filter a {
@@ -165,6 +180,7 @@ body {
     border-bottom: solid #cf7041;
 
 }
+
 
 .course-filter li.current {
     background-color: #9ccfc7;
