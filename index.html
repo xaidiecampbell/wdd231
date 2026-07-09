@@ -29,7 +29,7 @@
 
 <body>
     <header>
-        <img src="images/m3logofinal.svg" alt="site logo" width="1000" height="1000">
+        <img src="images/m3logofinal.svg" alt="site logo" width="100" height="100">
         <h2>
             <span id="course-title">WDD 231 - Web Frontend Development</span>
         </h2>
@@ -37,7 +37,7 @@
     </header>
     <nav id="nav-bar" class="navigation">
         <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a class="active" href="index.html">Home</a></li>
             <li><a href="chamber.html">Chamber Project</a></li>
             <li><a href="m3.html">Final Project</a></li>
 
@@ -62,49 +62,50 @@
                 </p>
 
             </div>
+        </section>
+        <section class="card">
             <div>
 
                 <h2>Student Photo</h2>
-            <div></div>
-                <img src="images/student-photo.webp" alt="headshot of Xaidie Campbell" height="300" width="300">
+                <div></div>
+                <img src="images/student-photo-2.webp" alt="headshot of Xaidie Campbell" height="472" width="482">
             </div>
         </section>
 
-        <section id="course-filter" class="course-filter">
+        <section id="course-filter" class="course-filter card">
             <h2>Web and Computer Programming Certificate</h2>
             <ul>
                 <li><a id="home">All Courses</a></li>
                 <li><a id="WDD">WDD Courses</a></li>
                 <li><a id="CSE">CSE Courses</a></li>
-                <li><a id="true">Completed</a></li>
 
             </ul>
+            <section class="courses" id="courses">
+                <h2>Courses</h2>
+                <section class="courseList">
+                    <section>
+                        <div>CSE 110</div>
+                    </section>
+                    <section>
+                        <div>WDD 130</div>
+                    </section>
+                    <section>
+                        <div>WDD 131</div>
+                    </section>
+                    <section>
+                        <div>WDD 231</div>
+                    </section>
+                    <section>
+                        <div>CSE 111</div>
+                    </section>
+                    <section>
+                        <div>CSE 210</div>
+                    </section>
+                </section>
+            </section>
         </section>
-
-        <section class="courses" id="courses">
-            <h2>Courses</h2>
-            <div class="courseList">
-                <section>
-                    <div>CSE 110</div>
-                </section>
-                <section>
-                    <div>WDD 130</div>
-                </section>
-                <section>
-                    <div>WDD 131</div>
-                </section>
-                <section>
-                    <div>WDD 231</div>
-                </section>
-                <section>
-                    <div>CSE 111</div>
-                </section>
-                <section>
-                    <div>CSE 210</div>
-                </section>
-                
-            </div>
-        </section>
+    </main>
+    <footer>
         <div class="social">
             <h2>Social Media Links</h2>
         </div>
@@ -118,9 +119,6 @@
             <a href="https://www.instagram.com/l3mon_bugs/" target="-blank"><img src="images/insta-logo.svg"
                     alt="instagram" width="16" height="16"></a>
         </div>
-    </main>
-    <footer>
-
         <p>@<span id="currentYear"></span>🌼 Xaidie Campbell 🌼 USA</p>
         <section>
             <h2>Last Modified</h2>

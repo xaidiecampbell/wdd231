@@ -9,7 +9,7 @@
     }
 
     header {
-        grid-template-columns: 50px auto; 
+        grid-template-columns: 50px auto;
     }
 
     .hamburger {
@@ -33,19 +33,34 @@
     .navigation li {
         padding: 2rem;
     }
-    .card {grid-template-columns: 3fr 1fr;}
-    .courses {display: grid;
-        grid-template-columns: 1fr 1fr 1fr;}
-                .courseList {
-                    display: grid;
-                    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-                    padding: .5rem 10px;
-                    justify-content: center;
-                    color: #253b45;
-                    text-decoration: none;
-                    border: solid #cf7041;
-                    border-radius: 10px;
-                    background-color: #cbbb80;
-                    gap: 30px;
-                }
-}
+
+    .card {
+        /* grid-template-columns: 3fr 1fr; */
+        display: grid;
+            grid-template-columns: 2fr 1fr;
+    }
+        .course-filter ul li{
+            display: block;
+            list-style-type: none;
+            margin: 10;
+            padding: 10;
+            text-align: justify;
+            gap: 10px;
+        }
+    .courses {
+
+        /* display: grid; */
+        /* grid-template-columns: 1fr 1fr 1fr;} */
+        .courseList {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            padding: .5rem 10px;
+            justify-content: center;
+            color: #253b45;
+            text-decoration: none;
+            border: solid #cf7041;
+            border-radius: 10px;
+            background-color: #cbbb80;
+            gap: 30px;
+        }
+    }}
