@@ -82,7 +82,7 @@ header span {
 }
 
 nav a.active {
-    background-color: none;
+    /* background-color: none; */
     color: #cf7041;
     font-weight: bold;
     border-radius: 5px;
@@ -192,8 +192,8 @@ main h1 {
 .course-filter ul {
     display: flex;
     list-style-type: none;
-    margin: 10;
-    padding: 10;
+    margin: 10px;
+    padding: 10px;
     text-align: justify;
     gap: 10px;
 }
