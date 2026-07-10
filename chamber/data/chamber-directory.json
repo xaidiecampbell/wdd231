@@ -1,9 +1,9 @@
 {
-    "Businesses": [
+    "businesses": [
 
         {
             "logo": "images/noun-smiley-face-6845325.svg",
-            "BuisnessName": "English in TheXarden",
+            "BusinessName": "English in TheXarden",
             "tagLine": "Connect Communicate Comprehend",
             "email": "thexarden@gmail.com",
             "phone": "1-222-555-5555",
@@ -12,7 +12,7 @@
         },
         {
             "logo": "images/woocommerce.svg",
-            "BuisnessName": "Jellybean Joy",
+            "BusinessName": "Jellybean Joy",
             "tagLine": "Reclaiming Motherhood",
             "email": "thexarden@gmail.com",
             "phone": "1-222-555-5555",
@@ -21,7 +21,7 @@
         },
         {
             "logo": "images/noun-smiley-face-6845325.svg",
-            "BuisnessName": "M3 Designs",
+            "BusinessName": "M3 Designs",
             "tagLine": "Original Pop Art Prints",
             "email": "thexarden@gmail.com",
             "phone": "1-222-555-5555",
@@ -30,7 +30,7 @@
         },
         {
             "logo": "images/noun-smiley-face-6845325.svg",
-            "BuisnessName": "Craft Camp",
+            "BusinessName": "Craft Camp",
             "tagLine": "Beautiful Crafts from Basics to Advanced",
             "email": "thexarden@gmail.com",
             "phone": "1-222-555-5555",
@@ -39,7 +39,7 @@
         },
         {
             "logo": "images/noun-smiley-face-6845325.svg",
-            "BuisnessName": "Technocopia",
+            "BusinessName": "Technocopia",
             "tagLine": "A Community of Makers",
             "email": "thexarden@gmail.com",
             "phone": "1-222-555-5555",
@@ -48,7 +48,7 @@
         },
         {
             "logo": "images/noun-smiley-face-6845325.svg",
-            "BuisnessName": "Fuller Craft Museum",
+            "BusinessName": "Fuller Craft Museum",
             "tagLine": "You won't believe it!",
             "email": "thexarden@gmail.com",
             "phone": "1-222-555-5555",
@@ -57,7 +57,7 @@
         },
         {
             "logo": "images/noun-smiley-face-6845325.svg",
-            "BuisnessName": "Gotland Rentals",
+            "BusinessName": "Gotland Rentals",
             "tagLine": "Safe Comfortable Affordable",
             "email": "thexarden@gmail.com",
             "phone": "1-222-555-5555",
@@ -66,7 +66,7 @@
         },
         {
             "logo": "images/noun-smiley-face-6845325.svg",
-            "BuisnessName": "West Boylston Deli",
+            "BusinessName": "West Boylston Deli",
             "tagLine": "Good People Good Food",
             "email": "thexarden@gmail.com",
             "phone": "1-222-555-5555",
@@ -75,16 +75,16 @@
         },
         {
             "logo": "images/noun-smiley-face-6845325.svg",
-            "BuisnessName": "Worcester Public Library",
+            "BusinessName": "Worcester Public Library",
             "tagLine": "More than Your Basic Library",
             "email": "thexarden@gmail.com",
             "phone": "1-222-555-5555",
-            "URL": "https\\thexarden.com",
+            "URL": "https//thexarden.com",
             "Service": true
         },
         {
             "logo": "images/noun-smiley-face-6845325.svg",
-            "BuisnessName": "Coders Connect",
+            "BusinessName": "Coders Connect",
             "tagLine": "We Write Code Together",
             "email": "thexarden@gmail.com",
             "phone": "1-222-555-5555",
@@ -93,3 +93,5 @@
         }
     ]
 }
+
+

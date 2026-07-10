@@ -34,14 +34,14 @@ nav.forEach(link => {
     }
 });
 
-const Businesses = data;
-const url = "./chamber-directory.json";
-const BusinessCard = document.querySelector("#res-grid");
-console.table(BusinessCard);
+const businesses = data;
+const url = "./data/chamber-directory.json";
+const businessCard = document.querySelector("#res-grid");
+console.table(businessCard);
 // load the JSON file
 async function GetData() {
     try {
-        const response = await fetch('./chamber-directory.json');
+        const response = await fetch('./data/chamber-directory.json');
 
         // Parse the JSON file
         const data = await response.json();
@@ -54,15 +54,15 @@ async function GetData() {
 }
 
 
-createBusinessCard(data.Businesses);
+createBusinessCard(data.businesses);
 
 
-function createBusinessCard(Businesses) {
+function createBusinessCard(businesses) {
     const container = document.querySelector(".res-grid");
 
-    Businesses.forEach(Business => {
-        const BusinessCard = document.createElement("section");
-        let BusinessName = document.createElement("h3");
+    businesses.forEach(business => {
+        const businessCard = document.createElement("section");
+        let businessName = document.createElement("h3");
         let tagLine = document.createElement("p");
         let email = document.createElement("p");
         let phone = document.createElement("p");
@@ -70,23 +70,23 @@ function createBusinessCard(Businesses) {
         let logo = document.createElement("img");
 
 
-        BusinessName.textContent = Business.BusinessName;
-        tagLine.innerHTML = `<span class="label">Location:</span> ${Business.tagLine}`;
-        email.innerHTML = `<span class="label">Dedicated:</span> ${Business.email}`;
-        phone.innerHTML = `<span class="label">Size:</span> ${Business.phone}`;
-        URL.innerHTML = `<span class="label">Website:</span> ${Business.URL}`;
-        logo.setAttribute("src", Business.logo);
-        logo.setAttribute("alt", `${Business.BusinessName}`);
+        businessName.textContent = business.businessName;
+        tagLine.innerHTML = `<span class="label">Location:</span> ${business.tagLine}`;
+        email.innerHTML = `<span class="label">Dedicated:</span> ${business.email}`;
+        phone.innerHTML = `<span class="label">Size:</span> ${business.phone}`;
+        URL.innerHTML = `<span class="label">Website:</span> ${business.URL}`;
+        logo.setAttribute("src", business.logo);
+        logo.setAttribute("alt", `${business.businessName}`);
         logo.setAttribute("loading", "lazy");
 
-        BusinessCard.appendChild(BusinessName);
-        BusinessCard.appendChild(tagLine);
-        BusinessCard.appendChild(email);
-        BusinessCard.appendChild(phone);
-        BusinessCard.appendChild(URL);
-        BusinessCard.appendChild(logo);
+        businessCard.appendChild(businessName);
+        businessCard.appendChild(tagLine);
+        businessCard.appendChild(email);
+        businessCard.appendChild(phone);
+        businessCard.appendChild(URL);
+        businessCard.appendChild(logo);
 
-        document.querySelector(".res-grid").appendChild(BusinessCard);
+        document.querySelector(".res-grid").appendChild(businessCard);
 
 
     });
