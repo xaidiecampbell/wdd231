@@ -37,7 +37,9 @@
     .card {
         /* grid-template-columns: 3fr 1fr; */
         display: grid;
-            grid-template-columns: 2fr 1fr;
+            grid-template-columns: 2fr 1fr;padding: 10px;
+                background-color: var(--accent2-color);
+                border-radius: 20px;
     }
         .course-filter ul li{
             display: block;
@@ -62,4 +64,4 @@
             border-radius: 10px;
             background-color: #cbbb80;
             gap: 30px;}
-    }}
+    }

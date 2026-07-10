@@ -140,7 +140,7 @@ body {
 main {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap: 10px;
+    gap:10px;
 }
 
 main h1 {
@@ -184,8 +184,7 @@ main h1 {
 }
 
 .course-filter {
-    display: flex;
-    flex-direction: column;
+    display: grid;
     grid-column: 1/3;
 }
 
@@ -209,7 +208,7 @@ main h1 {
 
 
 .course-filter li.current {
-    background-color: #9ccfc7;
+    background-color: #9ccfc7;display:block;
 }
 
 .course-filter a:hover {
