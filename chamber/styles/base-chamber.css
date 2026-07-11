@@ -77,7 +77,7 @@ header span {
 
 nav a.active {
     /* background-color: none; */
-    color: #cf7041;
+    color: #fff;
     font-weight: bold;
     border-radius: 5px;
 }
