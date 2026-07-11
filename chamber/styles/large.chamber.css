@@ -17,8 +17,10 @@
     }
 
     .navigation {
-        display: flex;background-color: #9ccfc7;
-            border-radius: 10px; align-items: center;
+        display: flex;
+        background-color: #9ccfc7;
+        border-radius: 10px;
+        align-items: center;
     }
 
     .navigation ul {
@@ -27,14 +29,31 @@
         color: #253b45;
         padding: 1rem;
         text-decoration: none;
-        text-align: center;background-color: #9ccfc7;
-            border-radius: 10px;align-items: center;
-        
+        text-align: center;
+        background-color: #9ccfc7;
+        border-radius: 10px;
+        align-items: center;
+
     }
 
     .navigation li {
         padding: 2rem;
         color: #253b45;
         text-decoration: none;
+    }
+
+    .res-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        background-color: #253b45;
+        padding: 20px;
+        gap: 4rem;
+        text-align: center;
+    }
+
+    .res-grid img {
+        width: 200px;
+        height: auto;
+
     }
 }

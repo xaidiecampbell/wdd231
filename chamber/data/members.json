@@ -2,7 +2,7 @@
     "businesses": [
 
         {
-            "logo": "images/noun-smiley-face-6845325.svg",
+            "logo": "/images/xardenlogo.svg",
             "businessName": "English in TheXarden",
             "tagLine": "Connect Communicate Comprehend",
             "email": "thexarden@gmail.com",
@@ -20,7 +20,7 @@
             "Service": true
         },
         {
-            "logo": "images/noun-smiley-face-6845325.svg",
+            "logo": "/images/happy-crab.webp",
             "businessName": "M3 Designs",
             "tagLine": "Original Pop Art Prints",
             "email": "thexarden@gmail.com",
@@ -47,7 +47,7 @@
             "Service": true
         },
         {
-            "logo": "images/noun-smiley-face-6845325.svg",
+            "logo": "images/woocommerce.svg",
             "businessName": "Fuller Craft Museum",
             "tagLine": "You won't believe it!",
             "email": "thexarden@gmail.com",
