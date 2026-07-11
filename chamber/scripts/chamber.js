@@ -36,7 +36,7 @@ const currentPage = window.location.pathname.split("/").pop();
 // });
 
 
-const url = "/data/chamber-directory.json";
+const url = "https://xaidiecampbell.github.io/wdd231/chamber/data/members.json";
 const businessCard = document.querySelector("#res-grid");
 console.table(businessCard);
 const jsonString = url
