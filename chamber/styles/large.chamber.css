@@ -17,19 +17,19 @@
     }
 
     .navigation {
-        display: flex;
+        display: flex;background-color: #9ccfc7;
+            border-radius: 10px; align-items: center;
     }
 
     .navigation ul {
         background-color: #fff;
         display: flex;
         color: #253b45;
-        text-align: center;
         padding: 1rem;
         text-decoration: none;
-        text-align: center;
-        background-color: #9ccfc7;
-        border-radius: 10px;
+        text-align: center;background-color: #9ccfc7;
+            border-radius: 10px;align-items: center;
+        
     }
 
     .navigation li {

@@ -130,6 +130,7 @@ nav a {
     background-color: white;
     gap: 15px;
 }
+.classList {display: block;}
 
 /* footer */
 footer {
