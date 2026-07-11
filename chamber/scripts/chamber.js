@@ -1,4 +1,4 @@
-alert("JavaScript is connected!");
+
 // store the selected elements that we are going to use
 const navButton = document.querySelector('#nav-button');
 const navLinks = document.querySelector('#nav-bar');
@@ -28,66 +28,74 @@ const currentPage = window.location.pathname.split("/").pop();
 // const navLinks = document.querySelectorAll("nav a");
 
 // Loop through each link
-nav.forEach(link => {
-    if (link.getAttribute("href") === currentPage) {
-        link.classList.add("active");
-    }
-});
 
-const businesses = data;
-const url = "./data/chamber-directory.json";
+// nav-bar.forEach(link => {
+//     if (link.getAttribute("href") === currentPage) {
+//         link.classList.add("active");
+//     }
+// });
+
+
+const url = "/data/chamber-directory.json";
 const businessCard = document.querySelector("#res-grid");
 console.table(businessCard);
+const jsonString = url
+const business = JSON.parse(jsonString);
+
+console.log(business.businessName);
+console.log(business.tagLine);
 // load the JSON file
 async function GetData() {
     try {
-        const response = await fetch('./data/chamber-directory.json');
+        const response = await fetch(url);
 
         // Parse the JSON file
         const data = await response.json();
-        console.log(data);
-
-        get(data);
+        console.log(Array.isArray(data.Businesses));
+        console.log(data.Businesses);
+        createBusinessCard(data.businesses);
+       
     } catch (error) {
         console.error("Error loading JSON:", error);
     }
 }
-
-
-createBusinessCard(data.businesses);
-
-
 function createBusinessCard(businesses) {
     const container = document.querySelector(".res-grid");
 
     businesses.forEach(business => {
-        const businessCard = document.createElement("section");
-        let businessName = document.createElement("h3");
-        let tagLine = document.createElement("p");
-        let email = document.createElement("p");
-        let phone = document.createElement("p");
-        let URL = document.createElement("p");
-        let logo = document.createElement("img");
+        console.log(business);
+        const businessCard = document.createElement("section"); businessCard.classList.add("business-card");
+        const businessName = document.createElement("h3"); businessName.classList.add("business-name");
+        const tagLine = document.createElement("p"); tagLine.classList.add("tagline");
+        const email = document.createElement("p"); email.classList.add("email");
+        const phone = document.createElement("p"); phone.classList.add("phone");
+        const website = document.createElement("p"); website.classList.add("website");
+        const logo = document.createElement("img"); logo.classList.add("business-logo");
 
 
         businessName.textContent = business.businessName;
-        tagLine.innerHTML = `<span class="label">Location:</span> ${business.tagLine}`;
-        email.innerHTML = `<span class="label">Dedicated:</span> ${business.email}`;
-        phone.innerHTML = `<span class="label">Size:</span> ${business.phone}`;
-        URL.innerHTML = `<span class="label">Website:</span> ${business.URL}`;
-        logo.setAttribute("src", business.logo);
-        logo.setAttribute("alt", `${business.businessName}`);
-        logo.setAttribute("loading", "lazy");
+        tagLine.textContent = business.tagLine;
+        email.textContent = business.email;
+        phone.textContent = business.phone;
+        website.innerHTML = `<a href="${business.URL}" target="_blank">${business.URL}</a>`;
+
+        logo.src = business.logo;
+        logo.alt = business.businessName;
+        logo.loading = "lazy";
+
 
         businessCard.appendChild(businessName);
         businessCard.appendChild(tagLine);
         businessCard.appendChild(email);
         businessCard.appendChild(phone);
-        businessCard.appendChild(URL);
+        businessCard.appendChild(website);
         businessCard.appendChild(logo);
 
-        document.querySelector(".res-grid").appendChild(businessCard);
+        container.appendChild(businessCard);
 
 
     });
 }
+console.log("Inside createBusinessCard");
+console.log(businesses);
+GetData();

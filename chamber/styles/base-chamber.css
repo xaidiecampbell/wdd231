@@ -141,7 +141,8 @@ footer {
     gap: 10px;
     border-radius: 10px;
 }
-
+.social {display: grid; grid-template-columns: 1/3;}
+.social a {width: 2px; height: 2px;}
 .bold {
     font-weight: 700;
 }
