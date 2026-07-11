@@ -136,7 +136,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
-    background-color: #9ccfc7;
+    background-color: white;
     padding: 1rem;
     gap: 10px;
     border-radius: 10px;
