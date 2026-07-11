@@ -1,4 +1,4 @@
-
+alert("Javascript file is working")
 // store the selected elements that we are going to use
 const navButton = document.querySelector('#nav-button');
 const navLinks = document.querySelector('#nav-bar');
@@ -39,7 +39,8 @@ const currentPage = window.location.pathname.split("/").pop();
 const url = "https://xaidiecampbell.github.io/wdd231/chamber/data/members.json";
 const businessCard = document.querySelector("#res-grid");
 console.table(businessCard);
-const jsonString = url
+const jsonString = GetData();
+
 const business = JSON.parse(jsonString);
 
 console.log(business.businessName);
