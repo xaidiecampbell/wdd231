@@ -186,7 +186,7 @@ main h1 {
     border: 3px solid #cf7041;
     padding: 1rem;
     border-radius: 8px;
-    background-color: white;
+    background-color: white;color:#253b45;
 }
 
 .course-filter {
@@ -229,7 +229,7 @@ main h1 {
 }
 
 .courses h2 {
-    color: #9ccfc7;
+    color: #cf7041;
     grid-column: 1/4;
     text-align: center;
 }
