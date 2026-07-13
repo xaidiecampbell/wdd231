@@ -164,8 +164,8 @@ main h1 {
 
 .card img {
     border-radius: 10px;
-    /* width: fit-content;
-    height: fit-content; */
+    width: auto;
+    height: 75%;
 }
 
 .courses {
