@@ -33,7 +33,8 @@
     .navigation li {
         padding: 2rem;
     }
-
+    main{gap:10px;}
+    .about {display: grid; grid-template-columns: 2fr 1fr;}
     .card {
         /* grid-template-columns: 3fr 1fr; */
         display: grid;

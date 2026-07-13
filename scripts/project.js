@@ -10,19 +10,19 @@ navButton.addEventListener('click', () => {
 });
 // wayfinding
 // Get the current page filename
-const currentPage = window.location.pathname.split("/").pop();
+// const currentPage = window.location.pathname.split("/").pop();
 
-// Get all navigation links
-const navLinks = document.querySelectorAll("nav a");
+// // Get all navigation links
+// const navLinks = document.querySelectorAll("nav a");
 
-// Loop through each link
-navLinks.forEach(link => {
-    if (link.getAttribute("href") === currentPage) {
-        link.classList.add("active");
-    }
-});
-// Select the nav element
-const navBar = document.querySelector('#nav-bar');
+// // Loop through each link
+// navLinks.forEach(link => {
+//     if (link.getAttribute("href") === currentPage) {
+//         link.classList.add("active");
+//     }
+// });
+// // Select the nav element
+// const navBar = document.querySelector('#nav-bar');
 
 // get the year and date modified
 const year = new Date().getFullYear();
