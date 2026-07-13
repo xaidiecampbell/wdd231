@@ -24,7 +24,6 @@
         background-color: #fff;
         display: flex;
         color: #253b45;
-        text-align: center;
         padding: 1rem;
         text-decoration: none;
         text-align: center;
@@ -50,7 +49,7 @@
             text-align: justify;
             gap: 10px;
         }
-    .courses {
+
 
         /* display: grid; */
         /* grid-template-columns: 1fr 1fr 1fr;} */
@@ -65,4 +64,4 @@
             border-radius: 10px;
             background-color: #cbbb80;
             gap: 30px;}
-    }
+        }
