@@ -2,7 +2,7 @@
     "businesses": [
 
         {
-            "logo": "/images/xardenlogo.svg",
+            "logo": "images/english.webp",
             "businessName": "English in TheXarden",
             "tagLine": "Connect Communicate Comprehend",
             "email": "thexarden@gmail.com",
@@ -11,7 +11,7 @@
             "Service": true
         },
         {
-            "logo": "images/woocommerce.svg",
+            "logo": "images/jj.webp",
             "businessName": "Jellybean Joy",
             "tagLine": "Reclaiming Motherhood",
             "email": "thexarden@gmail.com",
@@ -20,7 +20,7 @@
             "Service": true
         },
         {
-            "logo": "/images/happy-crab.webp",
+            "logo": "images/frog-snail.webp",
             "businessName": "M3 Designs",
             "tagLine": "Original Pop Art Prints",
             "email": "thexarden@gmail.com",
@@ -29,7 +29,7 @@
             "Service": true
         },
         {
-            "logo": "images/noun-smiley-face-6845325.svg",
+            "logo": "images/craft.webp",
             "businessName": "Craft Camp",
             "tagLine": "Beautiful Crafts from Basics to Advanced",
             "email": "thexarden@gmail.com",
@@ -38,7 +38,7 @@
             "Service": true
         },
         {
-            "logo": "images/noun-smiley-face-6845325.svg",
+            "logo": "images/technocopia.webp",
             "businessName": "Technocopia",
             "tagLine": "A Community of Makers",
             "email": "thexarden@gmail.com",
@@ -47,7 +47,7 @@
             "Service": true
         },
         {
-            "logo": "images/woocommerce.svg",
+            "logo": "images/fcm.webp",
             "businessName": "Fuller Craft Museum",
             "tagLine": "You won't believe it!",
             "email": "thexarden@gmail.com",
@@ -56,7 +56,7 @@
             "Service": true
         },
         {
-            "logo": "images/noun-smiley-face-6845325.svg",
+            "logo": "images/rental.webp",
             "businessName": "Gotland Rentals",
             "tagLine": "Safe Comfortable Affordable",
             "email": "thexarden@gmail.com",
@@ -65,7 +65,7 @@
             "Service": true
         },
         {
-            "logo": "images/noun-smiley-face-6845325.svg",
+            "logo": "images/deli.webp",
             "businessName": "West Boylston Deli",
             "tagLine": "Good People Good Food",
             "email": "thexarden@gmail.com",
@@ -74,7 +74,7 @@
             "Service": true
         },
         {
-            "logo": "images/noun-smiley-face-6845325.svg",
+            "logo": "images/wpl.webp",
             "businessName": "Worcester Public Library",
             "tagLine": "More than Your Basic Library",
             "email": "thexarden@gmail.com",
@@ -83,7 +83,7 @@
             "Service": true
         },
         {
-            "logo": "images/noun-smiley-face-6845325.svg",
+            "logo": "images/coder.webp",
             "businessName": "Coders Connect",
             "tagLine": "We Write Code Together",
             "email": "thexarden@gmail.com",
