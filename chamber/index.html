@@ -30,7 +30,7 @@
 <body>
     <main>
         <header>
-            <img src="images/noun-smiley-face-6845325.svg" alt="site logo" width="150" height="150">
+            <img src="images/city-logo.webp" alt="site logo" width="150" height="150">
             <h1>
                 <span id="course-title">Worcester Chamber of Commerce</span>
             </h1>
@@ -38,9 +38,9 @@
         </header>
         <nav id="nav-bar" class="navigation">
             <ul>
-                <li><a class="active" href="home.html">Home</a></li>
-                <li><a href="#" id="chamber-home">Chamber Home</a></li>
-                <li><a href="#" id="directory.html">Directory</a></li>
+                
+                <li><a class="active"href="#" id="chamber-home">Chamber Home</a></li>
+                <li><a href="directory.html" id="directory.html">Directory</a></li>
                 <li><a href="#" id="Join">Join</a></li>
                 <li><a href="#" id="Discover">Discover</a></li>
 
@@ -50,21 +50,37 @@
 
             <h2>Home</h2>
         </section>
-        <section>
-            <div class="toggle">
-                <ul>
-                    <li><a class="active" href="grid">Grid</a></li>
-                    <li><a href="list">List</a></li>
-                </ul>
+        <section class="card">
+            <div>
+        
+                <p>I am Xaidie Campbell. I'm from the United States of America. I have lived in New England for the last
+                    18 years. I am currently studying Software Development at BYU Pathway Worldwide. I am a long-time
+                    ESL instructor and have worked successfully in international college student management, though I
+                    enjoy the classroom more. I love singing, serving, and teaching.</p>
+                <img src="images/hero-image.webp" alt="hero image of Worcester MA at night">
+                
+                <p>The current temperature in Worcester, Massachusetts is <span id="current-temp"></span></p>
+                <figure>
+                    <img id="weather-icon" src="" alt="">
+                    <figcaption></figcaption>
+                </figure>
+                <div class="card" class="weather">
+                    <h2 id="town"></h2>
+                    <img id="graphic" src="" alt="">
+                    <p id="description"></p>
+                    <p id="temperature"></p>
+                </div>
             </div>
         </section>
-        <section>
-            <article class="grid">
-                <section class="res-grid">
-
-                </section>
-
-            </article>
+        <section class="card">
+            <h2>Upcoming Events</h2>
+            <ul>
+                <li><a href="#">Annual Summer Clambake</a></li>
+                <li><a href="#">Night at the Ball Park</a></li>
+                <li><a href="#">Entreprenuer's Round Table Discussion</a></li>
+                <li><a href="#">Power of Women Luncheon</a></li>
+                <li><a href="#">Breakfast for NonProfits</a></li>
+            </ul>
         </section>
     </main>
     <footer>

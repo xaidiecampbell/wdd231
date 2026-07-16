@@ -1,4 +1,4 @@
-alert("Javascript file is working")
+// alert("Javascript file is working")
 // store the selected elements that we are going to use
 const navButton = document.querySelector('#nav-button');
 const navLinks = document.querySelector('#nav-bar');
@@ -19,21 +19,6 @@ document.getElementById("currentYear").textContent = year;
 document.getElementById("lastModified").textContent = document.lastModified;
 // Select the nav element
 const navBar = document.querySelector('#nav-bar');
-
-// wayfinding
-// Get the current page filename
-const currentPage = window.location.pathname.split("/").pop();
-
-// Get all navigation links
-// const navLinks = document.querySelectorAll("nav a");
-
-// Loop through each link
-
-// nav-bar.forEach(link => {
-//     if (link.getAttribute("href") === currentPage) {
-//         link.classList.add("active");
-//     }
-// });
 
 
 const url = "https://xaidiecampbell.github.io/wdd231/chamber/data/members.json";
@@ -100,3 +85,58 @@ function createBusinessCard(businesses) {
 console.log("Inside createBusinessCard");
 console.log(businesses);
 GetData();
+
+// toggle between grid and list
+const directory = document.querySelector("#directory");
+const gridButton = document.querySelector("#grid");
+const listButton = document.querySelector("#list");
+
+gridButton.addEventListener("click", () => {
+    directory.classList.add("grid-view");
+    directory.classList.remove("list-view");
+});
+
+listButton.addEventListener("click", () => {
+    directory.classList.add("list-view");
+    directory.classList.remove("grid-view");
+});
+
+// fetch weather
+const myTown = document.querySelector('#town');
+const myDescription = document.querySelector('#description');
+const myTemperature = document.querySelector('#temperature');
+const myGraphic = document.querySelector('#graphic');
+const myKey = "23858379a0a8586a573c18f553493fee"
+const myLat = "42.26990400511081"
+const myLon = "-71.77811424327732"
+const myUrl = `//api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLon}&appid=${myKey}&units=imperial`;
+
+
+
+async function apiFetch() {
+    try {
+        const response = await fetch(myUrl);
+        if (response.ok) {
+            const data = await response.json();
+            console.log(data); // testing only
+            displayResults(data); // uncomment when ready
+        } else {
+            throw Error(await response.text());
+        }
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+apiFetch();
+
+function displayResults(data) {
+    console.log('hello')
+    myTown.innerHTLM = data.name
+    myDescription.innerHTML = data.weather[0].description
+    myTemperature.innerHTML = `${data.main.temp}&deg;F`;
+    const iconSrc = `https://openweathermap.org/payload/api/media/file/${data.weather[0].icon}@2x.png`;
+    myGraphic.setAttribute('src', iconSrc);
+    myGraphic.setAttribute('alt', data.weather[0].description);
+
+}

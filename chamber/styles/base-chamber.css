@@ -87,7 +87,7 @@ nav a {
 }
 
 /* main */
-.toggle ul {
+.view-buttons {
     list-style: none;
     display: grid;
     grid-auto-flow: column;
@@ -96,16 +96,17 @@ nav a {
     color: #9ccfc7;
     padding: 10px;
     gap: 15px;
+    color: #253b45;
+        text-decoration: none;
+        background-color: #cbbb80;
+        border-radius: 5px;
+        padding: 10px;
+        gap: 15px;
 }
 
-.toggle a {
-    color: #253b45;
-    text-decoration: none;
-    background-color: #cbbb80;
-    border-radius: 5px;
-    padding: 10px;
-    gap: 15px;
-}
+
+    
+
 
 .grid {
     display: grid;

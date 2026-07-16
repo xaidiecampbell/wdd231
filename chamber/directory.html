@@ -28,17 +28,16 @@
     <body>
         <main>
             <header>
-                <img src="images/noun-smiley-face-6845325.svg" alt="site logo" width="150" height="150">
+                <img src="images/city-logo.webp" alt="site logo" width="150" height="150">
                 <h1>
                     <span id="course-title">Worcester Chamber of Commerce</span>
                 </h1>
                 <button id="nav-button" class="hamburger" aria-label="navigation"></button>
             </header>
             <nav id="nav-bar" class="navigation">
-                <ul>
-                    <li><a href="home.html">Home</a></li>             
-                    <li><a href="#" id="chamber-home">Chamber Home</a></li>
-                    <li><a class="active" href="#" id="directory.html">Directory</a></li>
+                <ul>          
+                    <li><a href="index.html" id="chamber/index.html">Chamber Home</a></li>
+                    <li><a class="active" href="#" id="directory">Directory</a></li>
                     <li><a href="#" id="Join">Join</a></li>
                     <li><a href="#" id="Discover">Discover</a></li>
             
@@ -49,20 +48,13 @@
                 <h2>Directory</h2>
             </section>
             <section>
-                <div class="toggle">
-                    <ul>
-                        <li><a class="active" href="grid">Grid</a></li>
-                        <li><a href="list">List</a></li>
-                    </ul>
+                <div class="view-buttons">
+                    <button id="grid">Grid</button>
+                    <button id="list">List</button>
                 </div>
-            </section>
-            <section>
-                <article class="grid">
-                    <section class="res-grid">
-                        
-                    </section>
-
-                </article>
+                
+                <section id="directory" class="grid-view">
+                </section>
             </section>
         </main>
         <footer>

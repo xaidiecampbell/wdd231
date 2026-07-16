@@ -56,4 +56,6 @@
         height: auto;
 
     }
+    .res-grid.list view{}
+    .res-grid.grid view{}
 }

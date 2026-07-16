@@ -8,7 +8,7 @@
             "email": "thexarden@gmail.com",
             "phone": "1-222-555-5555",
             "website": "https://thexarden.com",
-            "Service": true
+            "member": "Gold"
         },
         {
             "logo": "images/jj.webp",
@@ -17,7 +17,7 @@
             "email": "thexarden@gmail.com",
             "phone": "1-222-555-5555",
             "website": "https://thexarden.com",
-            "Service": true
+            "member": "Silver"
         },
         {
             "logo": "images/frog-snail.webp",
@@ -26,7 +26,7 @@
             "email": "thexarden@gmail.com",
             "phone": "1-222-555-5555",
             "website": "https://thexarden.com",
-            "Service": true
+            "member": "Silver"
         },
         {
             "logo": "images/craft.webp",
@@ -35,7 +35,7 @@
             "email": "thexarden@gmail.com",
             "phone": "1-222-555-5555",
             "website": "https://thexarden.com",
-            "Service": true
+            "member": "Gold"
         },
         {
             "logo": "images/technocopia.webp",
@@ -44,7 +44,7 @@
             "email": "thexarden@gmail.com",
             "phone": "1-222-555-5555",
             "website": "https://technocopia.org/",
-            "Service": true
+            "member": "Basic"
         },
         {
             "logo": "images/fcm.webp",
@@ -53,7 +53,7 @@
             "email": "thexarden@gmail.com",
             "phone": "1-222-555-5555",
             "website": "https://fullercraft.org/",
-            "Service": true
+            "member": "Gold"
         },
         {
             "logo": "images/rental.webp",
@@ -62,7 +62,7 @@
             "email": "thexarden@gmail.com",
             "phone": "1-222-555-5555",
             "website": "https://thexarden.com",
-            "Service": true
+            "member": "Silver"
         },
         {
             "logo": "images/deli.webp",
@@ -71,7 +71,7 @@
             "email": "thexarden@gmail.com",
             "phone": "1-222-555-5555",
             "website": "https://thexarden.com",
-            "Service": true
+            "member": "Basic"
         },
         {
             "logo": "images/wpl.webp",
@@ -80,7 +80,7 @@
             "email": "thexarden@gmail.com",
             "phone": "1-222-555-5555",
             "website": "https://www.mywpl.org/main-library",
-            "Service": true
+            "member": "Basic"
         },
         {
             "logo": "images/coder.webp",
@@ -89,7 +89,7 @@
             "email": "thexarden@gmail.com",
             "phone": "1-222-555-5555",
             "website": "https://technocopia.org/",
-            "Service": true
+            "member": "Gold"
         }
     ]
 }
