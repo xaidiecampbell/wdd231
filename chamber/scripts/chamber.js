@@ -1,4 +1,5 @@
-// alert("Javascript file is working")
+import { getWeather } from "./weather.mjs";
+alert("Javascript file is working")
 // store the selected elements that we are going to use
 const navButton = document.querySelector('#nav-button');
 const navLinks = document.querySelector('#nav-bar');
@@ -20,16 +21,42 @@ document.getElementById("lastModified").textContent = document.lastModified;
 // Select the nav element
 const navBar = document.querySelector('#nav-bar');
 
+// toggle between grid and list
+const directory = document.querySelector("#directory");
+const gridButton = document.querySelector("#grid");
+const listButton = document.querySelector("#list");
+
+console.log("directory:", directory);
+console.log("gridButton:", gridButton);
+console.log("listButton:", listButton);
+
+gridButton.addEventListener("click", () => {
+    directory.classList.add("grid-view");
+    directory.classList.remove("list-view");
+});
+
+listButton.addEventListener("click", () => {
+    directory.classList.add("list-view");
+    directory.classList.remove("grid-view");
+});
+console.log(gridButton);
+console.log(listButton);
+
+// fetch weather
+console.log(myUrl);
+console.log("getWeather started");
+getWeather();
+
 
 const url = "https://xaidiecampbell.github.io/wdd231/chamber/data/members.json";
-const businessCard = document.querySelector("#res-grid");
+const businessCard = document.querySelector("#grid-view");
 console.table(businessCard);
-const jsonString = GetData();
+// const jsonString = GetData();
 
-const business = JSON.parse(jsonString);
+// const business = JSON.parse(jsonString);
 
-console.log(business.businessName);
-console.log(business.tagLine);
+// console.log(business.businessName);
+// console.log(business.tagLine);
 // load the JSON file
 async function GetData() {
     try {
@@ -46,10 +73,11 @@ async function GetData() {
     }
 }
 function createBusinessCard(businesses) {
-    const container = document.querySelector(".res-grid");
+    const container = document.querySelector("#directory");
 
     businesses.forEach(business => {
-        console.log(business);
+        console.log(business.businessName);
+        console.log(business.tagLine);
         const businessCard = document.createElement("section"); businessCard.classList.add("business-card");
         const businessName = document.createElement("h3"); businessName.classList.add("business-name");
         const tagLine = document.createElement("p"); tagLine.classList.add("tagline");
@@ -77,66 +105,40 @@ function createBusinessCard(businesses) {
         businessCard.appendChild(website);
         businessCard.appendChild(logo);
 
-        container.appendChild(businessCard);
+        // container.appendChild(businessCard);
 
 
     });
 }
-console.log("Inside createBusinessCard");
-console.log(businesses);
+
 GetData();
+// console.log(data);
 
-// toggle between grid and list
-const directory = document.querySelector("#directory");
-const gridButton = document.querySelector("#grid");
-const listButton = document.querySelector("#list");
+// filter, sort, and slice JSoN for index page
+const businesses = data.businesses;
+const featuredBusinesses = businesses.filter(business =>
+    business.member === "Gold" || business.member === "Silver"
+);
+featuredBusinesses.sort(() => Math.random() - 0.5);
+const spotlightBusinesses = featuredBusinesses.slice(0, 3);
 
-gridButton.addEventListener("click", () => {
-    directory.classList.add("grid-view");
-    directory.classList.remove("list-view");
+const spotlight = document.querySelector("#spotlights");
+
+spotlightBusinesses.forEach(business => {
+
+    const card = document.createElement("section");
+
+    card.innerHTML = `
+        <img src="${business.logo}" alt="${business.businessName} logo">
+        <h3>${business.businessName}</h3>
+        <p>${business.tagLine}</p>
+        <p>${business.phone}</p>
+        <a href="${business.website}" target="_blank">
+            Visit Website
+        </a>
+        <p>${business.member} Member</p>
+    `;
+
+    spotlight.appendChild(card);
+
 });
-
-listButton.addEventListener("click", () => {
-    directory.classList.add("list-view");
-    directory.classList.remove("grid-view");
-});
-
-// fetch weather
-const myTown = document.querySelector('#town');
-const myDescription = document.querySelector('#description');
-const myTemperature = document.querySelector('#temperature');
-const myGraphic = document.querySelector('#graphic');
-const myKey = "23858379a0a8586a573c18f553493fee"
-const myLat = "42.26990400511081"
-const myLon = "-71.77811424327732"
-const myUrl = `//api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLon}&appid=${myKey}&units=imperial`;
-
-
-
-async function apiFetch() {
-    try {
-        const response = await fetch(myUrl);
-        if (response.ok) {
-            const data = await response.json();
-            console.log(data); // testing only
-            displayResults(data); // uncomment when ready
-        } else {
-            throw Error(await response.text());
-        }
-    } catch (error) {
-        console.log(error);
-    }
-}
-
-apiFetch();
-
-function displayResults(data) {
-    console.log('hello')
-    myTown.innerHTLM = data.name
-    myDescription.innerHTML = data.weather[0].description
-    myTemperature.innerHTML = `${data.main.temp}&deg;F`;
-    const iconSrc = `https://openweathermap.org/payload/api/media/file/${data.weather[0].icon}@2x.png`;
-    myGraphic.setAttribute('src', iconSrc);
-    myGraphic.setAttribute('alt', data.weather[0].description);
-
-}

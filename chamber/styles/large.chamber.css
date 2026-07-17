@@ -42,7 +42,7 @@
         text-decoration: none;
     }
 
-    .res-grid {
+    .grid-view {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         background-color: #253b45;
@@ -51,11 +51,23 @@
         text-align: center;
     }
 
-    .res-grid img {
+    .grid-view img {
         width: 200px;
         height: auto;
 
     }
-    .res-grid.list view{}
-    .res-grid.grid view{}
+
+    .grid-view.list view {
+        display: block;
+    }
+
+    .grid-view.grid view {
+        display: grid;
+    }
+
+    .card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: #cbbb80;
+    }
 }
